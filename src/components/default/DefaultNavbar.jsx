@@ -9,15 +9,15 @@ const nav = [
     },
     {
         text: "Components",
-        path: "/",
+        path: "/components",
     },
     {
         text: "Pages",
-        path: "/",
+        path: "/pages",
     },
     {
         text: "Projects",
-        path: "/",
+        path: "/projects",
     },
 ];
 
