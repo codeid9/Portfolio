@@ -5,7 +5,7 @@ import { IoClose } from "react-icons/io5";
 function DefaultSearch() {
     const [searchText, setSearchText] = useState("");
     return (
-        <div className="min-w-[clamp(280px,95%,550px)] flex items-center gap-2 w-fit mx-auto p-2 rounded shadow border border-[#0005] bg-white">
+        <div className="min-w-[clamp(280px,95%,550px)] flex items-center gap-2 w-fit mx-auto p-2 rounded shadow border border-[#0002] bg-white">
             <input
                 type="text"
                 placeholder="search..."

@@ -1,4 +1,4 @@
-export const componentsData = [
+export const pagesData = [
     {
         text:"Navbars",
         path:"navbars",
@@ -8,6 +8,11 @@ export const componentsData = [
         text:"Forms",
         path:"forms",
         description:"Get Respnsive & Modern Forms."
+    },
+    {
+        text:"Cards",
+        path:"cards",
+        description:"Watch Out These Next Lavel Cards."
     },
     {
         text:"Search Boxes",
