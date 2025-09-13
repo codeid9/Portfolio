@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 
@@ -22,7 +22,28 @@ const nav = [
 ];
 
 function DefaultNavbar() {
+    const mobileNavRef = useRef(null);
     const [openNav, setOpenNav] = useState(false);
+
+    useEffect(() => {
+        function handleClickOutside(event) {
+            if (
+                mobileNavRef.current &&
+                !mobileNavRef.current.contains(event.target)
+            ) {
+                setOpenNav(false);
+            }
+        }
+        if (openNav) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, [openNav]);
+
     return (
         <div className="flex justify-between items-center px-4 h-16 w-full border-b border-[#0002]">
             <Link to="/" className="font-extrabold text-3xl uppercase">
@@ -48,6 +69,7 @@ function DefaultNavbar() {
             </ul>
             {/* for tablet & mobiles*/}
             <div
+                id="mobileNav"
                 className="md:hidden text-3xl cursor-pointer"
                 onClick={() => setOpenNav(!openNav)}
             >
@@ -58,12 +80,16 @@ function DefaultNavbar() {
                 )}
             </div>
             {openNav ? (
-                <ul className="md:hidden absolute right-0 top-16 bg-white p-2 shadow">
+                <ul
+                    className="md:hidden absolute right-0 top-16 bg-white p-2 shadow"
+                    ref={mobileNavRef}
+                >
                     {nav && nav.length
                         ? nav.map(({ text, path }) => (
                               <li
                                   key={text}
                                   className="hover:text-blue-600 hover:shadow-xl hover:border-[#0002] rounded border border-transparent p-2 text-xl transition-all"
+                                  onClick={() => setOpenNav(false)}
                               >
                                   <Link
                                       className="block w-full h-full px-2"
