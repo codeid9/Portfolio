@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaBars, FaBarsStaggered } from "react-icons/fa6";
 
 const nav = [
@@ -24,6 +24,7 @@ const nav = [
 function DefaultNavbar() {
     const mobileNavRef = useRef(null);
     const [openNav, setOpenNav] = useState(false);
+    const { pathname } = useLocation();
 
     useEffect(() => {
         function handleClickOutside(event) {
@@ -34,6 +35,7 @@ function DefaultNavbar() {
                 setOpenNav(false);
             }
         }
+        window.scrollTo(0, 0);
         if (openNav) {
             document.addEventListener("mousedown", handleClickOutside);
         } else {
@@ -42,7 +44,7 @@ function DefaultNavbar() {
         return () => {
             document.removeEventListener("mousedown", handleClickOutside);
         };
-    }, [openNav]);
+    }, [openNav, pathname]);
 
     return (
         <div className="flex justify-between items-center px-4 h-16 w-full border-b border-[#0002]">
