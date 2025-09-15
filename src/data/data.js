@@ -1,57 +1,27 @@
-const navbarsData = [
-    {
-        name:"navbar",
-        imgUrl:"/dp.jpg",
-        description:"a simple navbar.",
-        path:"navbars/navbar1",
-        technologies:["Tailwind CSS","React"],
-    },
-    {
-        name:"navbar",
-        imgUrl:"/dp.jpg",
-        description:"a simple navbar.",
-        path:"navbars/navbar2",
-        technologies:["Tailwind CSS","React"],
-    },
-    {
-        name:"navbar",
-        imgUrl:"/dp.jpg",
-        description:"a simple navbar.",
-        path:"navbars/navbar3",
-        technologies:["Tailwind CSS","React"],
-    }
-];
-
-
 export const pagesData = [
     {
         text:"Navbars",
-        path:"navbars",
         description:"Explore amazing navbars.",
-        data:navbarsData,
+        path:"/category/navbars",
     },
     {
         text:"Forms",
-        path:"forms",
         description:"Get Respnsive & Modern Forms.",
-        data:[],
+        path:"/",
     },
     {
         text:"Cards",
-        path:"cards",
         description:"Watch Out These Next Lavel Cards.",
-        data:[],
+        path:"/",
     },
     {
         text:"Search Boxes",
-        path:"searchbox",
         description:"View search boxes.",
-        data:[],
+        path:"/",
     },
     {
         text:"Footer",
-        path:"footer",
         description:"choose footers according to yours choice.",
-        data:[],
+        path:"/",
     },
 ];

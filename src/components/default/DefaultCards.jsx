@@ -6,7 +6,7 @@ function DefaultCards({ text, description, path }) {
             <h1 className="font-bold uppercase">{text}</h1>
             <p>{description}</p>
             <button className="bg-blue-600 w-full outline-none rounded text-white cursor-pointer active:scale-95 transition-all">
-                <Link to={`/category/${path}`} className=" w-full block h-full py-1">View All</Link>
+                <Link to={`${path}`} className=" w-full block h-full py-1">View All</Link>
             </button>
         </div>
     );

@@ -83,7 +83,7 @@ function DefaultNavbar() {
             </div>
             {openNav ? (
                 <ul
-                    className="md:hidden absolute right-0 top-16 bg-white p-2 shadow"
+                    className="md:hidden absolute right-0 z-30 top-16 bg-white p-2 shadow"
                     ref={mobileNavRef}
                 >
                     {nav && nav.length
