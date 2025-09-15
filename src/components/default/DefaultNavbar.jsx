@@ -52,7 +52,7 @@ function DefaultNavbar() {
                 CodeId9
             </Link>
             {/* for laptop & destop */}
-            <ul className="hidden md:flex gap-1 capitalize">
+            <ul className="hidden md:flex gap-1 capitalize h-full items-center">
                 {nav && nav.length
                     ? nav.map(({ text, path }) => (
                           <li
