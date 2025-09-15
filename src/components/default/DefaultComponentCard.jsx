@@ -2,7 +2,7 @@ import React from 'react'
 
 function DefaultComponentCard({imgUrl,tech,description}) {
   return (
-    <div className='w-[clamp(200px,100%,350px)] bg-gray-200 shadow-md p-2 rounded-2xl'>
+    <div className='w-[clamp(200px,100%,350px)] bg-gray-100 shadow-md p-2 rounded-2xl'>
       <div>
         <div className='w-full relative hover:'>
           <img src={imgUrl} alt="project img" className='rounded-lg' />

@@ -32,10 +32,10 @@ function ComponentsPage() {
           {
             listView 
             ? 
-            <div className="p-2 mt-10 flex flex-col gap-3">
-              <DefaultComponentList imgUrl={"/dp.jpg"} tech={["html","css","js"]} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
-              <DefaultComponentList imgUrl={"/dp.jpg"} tech={["html","css","js"]} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
-              <DefaultComponentList imgUrl={"/dp.jpg"} tech={["html","css","js"]} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
+            <div className="p-0 sm:p-2 mt-10 flex flex-col gap-3">
+              <DefaultComponentList imgUrl={"/dp.jpg"} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
+              <DefaultComponentList imgUrl={"/dp.jpg"} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
+              <DefaultComponentList imgUrl={"/dp.jpg"} description={"Project description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis in eveniet quas alias temporibus expedita, facilis unde odit saepe earum debitis voluptatem tenetur obcaecati architecto cupiditate aspernatur soluta eum fuga."}/>
             </div>
             :
             <div className="p-2 mt-10 grid place-items-center justify-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
