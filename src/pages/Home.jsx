@@ -20,7 +20,7 @@ function Home() {
                     </div>
                 </figure>
                 <button className="block mx-auto bg-gradient-to-r from-blue-800 via-violet-600 to-pink-500 text-white rounded-4xl w-3xs cursor-pointer text-xl overflow-hidden relative hover:shadow-xl hover:scale-95 active:opacity-80 transition-all">
-                    <Link to="/components" className="p-4 block h-full w-full">Explore</Link>
+                    <Link to="/category" className="p-4 block h-full w-full">Explore</Link>
                 </button>
             </div>
             </div>

@@ -9,7 +9,7 @@ const nav = [
     },
     {
         text: "Components",
-        path: "/components",
+        path: "/category",
     },
     {
         text: "Pages",
