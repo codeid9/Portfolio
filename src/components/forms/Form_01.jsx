@@ -2,6 +2,7 @@ import { useState } from "react";
 
 function Form_01() {
     const [formType, setFormType] = useState("signup");
+    const inputStyle = "border border-[#0004] rounded w-full p-2";
     return (
         <div className="w-full h-[calc(100vh-4rem)] flex items-center justify-center bg-gradient-to-tl  from-teal-900 to-teal-600 px-2 sm:px-0">
             <div className="w-xs sm:w-2xl md:w-3xl h-10/12 bg-white transition duration-300 rounded-2xl relative overflow-hidden">
@@ -48,24 +49,24 @@ function Form_01() {
                             <h1 className="text-center font-bold text-3xl">
                                 Sign Up
                             </h1>
-                            <form className="flex flex-col items-center gap-4 w-10/12 sm:w-9/12 mx-auto">
+                            <form className="flex flex-col items-center gap-2 w-10/12 sm:w-9/12 mx-auto">
                                 <input
-                                    className="border border-[#0004] rounded w-full px-2"
+                                    className={inputStyle}
                                     type="text"
                                     placeholder="First Name"
                                 />
                                 <input
-                                    className="border border-[#0004] rounded w-full px-2"
+                                    className={inputStyle}
                                     type="text"
                                     placeholder="Last Name"
                                 />
                                 <input
-                                    className="border border-[#0004] rounded w-full px-2"
+                                    className={inputStyle}
                                     type="text"
                                     placeholder=" Email address"
                                 />
                                 <input
-                                    className="border border-[#0004] rounded w-full px-2"
+                                    className={inputStyle}
                                     type="text"
                                     placeholder="Password"
                                 />
@@ -112,12 +113,12 @@ function Form_01() {
                             <form className="flex flex-col items-center mx-auto pt-12 gap-4 w-10/12 sm:w-9/12">
                                 <input
                                     type="text"
-                                    className="border border-[#0003] rounded w-full"
+                                    className={inputStyle}
                                     placeholder="Enter email or username"
                                 />
                                 <input
                                     type="text"
-                                    className="border border-[#0003] rounded w-full"
+                                    className={inputStyle}
                                     placeholder="Enter password"
                                 />
                                 <button className="bg-black w-full text-white p-1 rounded">
