@@ -9,7 +9,7 @@ function DefaultComponentDetails({data}) {
                 <img
                     src={img}
                     alt="component image"
-                    className="w-sm -rotate-12 hover:rotate-0 transition duration-200 shadow-2xl"
+                    className="w-sm md:-rotate-12 hover:rotate-0 transition duration-200 shadow-2xl rounded"
                 />
             </div>
             <div className="sm:flex-7 flex flex-col gap-4 items-center justify-around">

@@ -7,6 +7,8 @@ import Pages from './pages/Pages.jsx';
 import Projects from './pages/Projects.jsx';
 import ExploreNavbar from './pages/ExploreNavbar.jsx';
 import Navbar01 from './components/navbars/Navbar01.jsx';
+import ExploreForms from './pages/ExploreForms.jsx';
+import Form_01 from './components/forms/Form_01.jsx';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
           <Route element={<Components/>} path='/category'/>
           <Route element={<ExploreNavbar/>} path='/category/navbars'/>
           <Route element={<Navbar01/>} path='/category/navbars/nav01'/>
+          <Route element={<ExploreForms/>} path='/category/forms'/>
+          <Route element={<Form_01/>} path='/category/forms/form01'/>
           <Route element={<h1>404 Page Not Found</h1>} path='*'/>
         </Routes>
         <DefaultFooter/>

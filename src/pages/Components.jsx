@@ -16,7 +16,7 @@ function Components() {
                         />
                     ))
                 ) : (
-                    <p>Components Not Found.</p>
+                    <h1 className='text-2xl'>Components Not Found.</h1>
                 )}
             </div>
     </div>
