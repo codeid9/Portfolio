@@ -1,6 +1,6 @@
-import { pagesData } from "../data/data.js";
 import DefaultCards from "../components/default/DefaultCards.jsx";
 import { Link } from "react-router-dom";
+import componentsData from "../data/comp-data.js";
 
 function Components() {
     return (
@@ -17,8 +17,8 @@ function Components() {
                 Category
             </h1>
             <div className="p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 items-center ">
-                {pagesData && pagesData.length ? (
-                    pagesData.map(({ text, path, description }) => (
+                {componentsData && componentsData.length ? (
+                    componentsData.map(({ text, path, description }) => (
                         <DefaultCards
                             key={text}
                             text={text}

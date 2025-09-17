@@ -8,8 +8,9 @@ import Projects from './pages/Projects.jsx';
 // comp page
 import DefaultComponentDetails from './components/default/DefaultComponentDetails.jsx';
 // comp data
-import { NavData } from './data/data.js';
-import { FormData } from './data/data.js';
+import navData from './data/nav-data.js';
+import formData from './data/form-data.js';
+
 
 function App() {
   return (
@@ -23,10 +24,10 @@ function App() {
           <Route element={<Components/>} path='/category'/>
           <Route element={<DefaultComponentDetails/>} path='/category/:compname'/>
           {
-            NavData && NavData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/navbars/${path}`}/>)
+            navData && navData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/navbars/${path}`}/>)
           }
           {
-            FormData && FormData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/forms/${path}`}/>)
+            formData && formData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/forms/${path}`}/>)
           }
 
           <Route element={<h1>404 Page Not Found</h1>} path='*'/>

@@ -1,5 +1,5 @@
 import { Link, useLocation, useParams } from "react-router-dom";
-import { pagesData } from "../../data/data.js";
+import componentsData from "../../data/comp-data.js";
 
 function DefaultComponentDetails() {
     const { compname } = useParams();
@@ -17,8 +17,8 @@ function DefaultComponentDetails() {
             <h1 className="text-center capitalize text-4xl py-4 font-extrabold bg-gradient-to-r from-pink-500 via-violet-600 to-blue-800 text-transparent bg-clip-text">
                 Explore {compname.replace("-", " ")}
             </h1>
-            {pagesData &&
-                pagesData.map(({ text, data }) => {
+            {componentsData &&
+                componentsData.map(({ text, data }) => {
                     if (text.toLowerCase() === compname) {
                         return data && data.length ? (
                             data.map(({ img, description, path, name }) => {
