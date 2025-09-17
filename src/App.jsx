@@ -5,10 +5,11 @@ import DefaultFooter from './components/default/DefaultFooter.jsx';
 import Components from './pages/Components.jsx';
 import Pages from './pages/Pages.jsx';
 import Projects from './pages/Projects.jsx';
-import ExploreNavbar from './pages/ExploreNavbar.jsx';
-import Navbar01 from './components/navbars/Navbar01.jsx';
-import ExploreForms from './pages/ExploreForms.jsx';
-import Form_01 from './components/forms/Form_01.jsx';
+// comp page
+import DefaultComponentDetails from './components/default/DefaultComponentDetails.jsx';
+// comp data
+import { NavData } from './data/data.js';
+import { FormData } from './data/data.js';
 
 function App() {
   return (
@@ -20,10 +21,14 @@ function App() {
           <Route element={<Pages/>} path='/pages'/>
           <Route element={<Projects/>} path='/projects'/>
           <Route element={<Components/>} path='/category'/>
-          <Route element={<ExploreNavbar/>} path='/category/navbars'/>
-          <Route element={<Navbar01/>} path='/category/navbars/nav01'/>
-          <Route element={<ExploreForms/>} path='/category/forms'/>
-          <Route element={<Form_01/>} path='/category/forms/form01'/>
+          <Route element={<DefaultComponentDetails/>} path='/category/:compname'/>
+          {
+            NavData && NavData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/navbars/${path}`}/>)
+          }
+          {
+            FormData && FormData.map(({path,Comp})=><Route element={<Comp/>} path={`/category/forms/${path}`}/>)
+          }
+
           <Route element={<h1>404 Page Not Found</h1>} path='*'/>
         </Routes>
         <DefaultFooter/>
