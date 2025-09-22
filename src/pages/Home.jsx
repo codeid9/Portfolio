@@ -3,8 +3,8 @@ import DefaultSearch from "../components/default/DefaultSearch.jsx";
 
 function Home() {
     return (
-        <div>
-            <div className="min-h-[calc(100dvh-4rem)] pt-4">
+        <div className="min-h-screen pt-20">
+            <div className="">
             <DefaultSearch />
             <div className="flex flex-col gap-4 mt-4">
                 <h1 className="text-5xl md:text-6xl text-center px-3 bg-gradient-to-r from-pink-500 via-violet-600 to-blue-800 text-transparent bg-clip-text  font-extrabold">

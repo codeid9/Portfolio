@@ -5,7 +5,7 @@ function DefaultComponentDetails() {
     const { compname } = useParams();
     const { pathname } = useLocation();
     return (
-        <div className="min-h-screen w-full">
+        <div className="min-h-screen w-full pt-16">
             <button>
                 <Link
                     to="/category"

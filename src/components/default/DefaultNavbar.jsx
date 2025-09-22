@@ -47,7 +47,7 @@ function DefaultNavbar() {
     }, [openNav, pathname]);
 
     return (
-        <div className="relative z-50 flex justify-between items-center px-4 h-16 w-full border-b border-[#0002] bg-white">
+        <div className="z-50 flex justify-between items-center px-4 h-16 w-full border-b border-[#0002] backdrop-blur-xs bg-transparent absolute">
             <Link to="/" className="font-extrabold text-3xl uppercase">
                 CodeId9
             </Link>

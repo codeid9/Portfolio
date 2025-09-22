@@ -4,7 +4,7 @@ import componentsData from "../data/comp-data.js";
 
 function Components() {
     return (
-        <div className="min-h-screen p-4">
+        <div className="min-h-screen pt-20">
             <button>
                 <Link
                     to="/"
